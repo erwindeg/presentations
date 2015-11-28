@@ -33,7 +33,7 @@
         <script src="js/raphael-min.js"></script>
         
         <script src="js/main.js"></script>
-
+		<script src="js/services.js"></script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -81,18 +81,32 @@
 				</section>
 				
 				<section>
-					<h2>Welk probleem lost het op?</h2>
+					<h2>Voordelen</h2>
 					<ol>
-						<li  class="fragment">Welke probleem lost het op?</li>
-						<li  class="fragment">Wat zijn het?</li>
-						<li  class="fragment">Wat kan ik ermee?</li>
+						<li  class="fragment">Time to market</li>
+						<li  class="fragment">Herbruikbaarheid</li>
+						<li  class="fragment">Voor elke requirement de beste technische oplossing</li>
 					</ol>
 					<aside class="notes">
-						Graag uitleggen microservices, vertel waarom belangrijk. Aan de hand van 3 punten uitleggen wat het zijn, zodat jr weet waar het over gaat of kunt antwoorden als iemand ernaar vraagt
 					</aside>
 				</section>
 		
+				<section data-state="showServices">
+						<div id="services"></div>
+				</section>
 				
+			
+				<section>
+					<h2>Nadelen</h2>
+					<ol>
+						<li  class="fragment">Complexiteit beheer</li>
+						<li  class="fragment">Test uitdagingen</li>
+						<li  class="fragment">Veel verschillende interfaces</li>
+					</ol>
+					<aside class="notes">
+					</aside>
+				</section>
+					
 
 				<!-- Example of nested vertical slides -->
 				<section>
@@ -454,6 +468,16 @@ Reveal.addEventListener( 'customevent', function() {
 						"strokeColor": "#FFFFFF"
 					}).lazylinepainter('paint');
 			});
+			
+			Reveal.addEventListener("showServices", function() {
+				$('#services').lazylinepainter( 
+					 {
+						"svgData": pathObjServices,
+						 "strokeWidth": 4,
+						 "strokeColor": "#FFFFFF"
+					}).lazylinepainter('paint');
+			});
+
 
 		</script>
 

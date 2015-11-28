@@ -7,7 +7,7 @@
  *  
  */ 
  
-var pathObj = {
+var pathObjServices = {
     "services": {
         "strokepath": [
             {
@@ -529,17 +529,4 @@ var pathObj = {
  
  
 
- 
-/* 
- Setup and Paint your lazyline! 
- */ 
- 
- $(document).ready(function(){ 
- $('#services').lazylinepainter( 
- {
-    "svgData": pathObj,
-    "strokeWidth": 4,
-    "strokeColor": "#FFFFFF"
-}).lazylinepainter('paint'); 
- });
  
