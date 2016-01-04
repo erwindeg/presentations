@@ -1,16 +1,7 @@
-.reveal section img {
-   background-color: transparent;
-   border: 0;
-   height: 500px;
-   box-shadow: none;
-}
 
-.invisible {
-	display: none;
-}
 
-#anna, #spin, #angstreactie,#wolk,#hond {
-    position: absolute;
+#problem,#services {
+    position: fixed;
     top:50%;
     left: 38%;
     margin: -300px 0 0 -400px;
